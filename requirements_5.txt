@@ -1,0 +1,15 @@
+# ---------------------------------------------------------------------------
+# INDIA UNION BUDGET ANALYSIS SYSTEM  --  Streamlit Cloud-safe dependencies
+# ---------------------------------------------------------------------------
+# camelot-py is intentionally REMOVED: it needs system libraries (Ghostscript,
+# libGL) that Streamlit Cloud lacks, and its failure aborts the whole install.
+# The app falls back to pdfplumber automatically, so nothing breaks.
+# (For local use with Camelot, add: camelot-py[base]>=0.11 )
+# ---------------------------------------------------------------------------
+streamlit>=1.36
+pandas>=2.2
+numpy>=1.26
+plotly>=5.22
+pdfplumber>=0.11
+openpyxl>=3.1
+XlsxWriter>=3.2
